@@ -1,0 +1,28 @@
+# Compiled Rust binaries — built with plain `rustc`, no Cargo/target dir.
+# Keeps the .rs source but ignores whatever executable rustc produces,
+# whatever it's named, for every scene file added here later.
+/renderer/examples/*
+!/renderer/examples/*.rs
+!/renderer/examples/*.md
+
+# In case this ever grows into a Cargo project
+/target/
+Cargo.lock
+
+# Python bytecode cache (from renderer/python_fallback/)
+__pycache__/
+*.pyc
+
+# Rendered output — videos produced by running the demos or scripts/
+*.mp4
+*.mov
+*.avi
+
+# Frame exports used for visually sanity-checking a render
+*.png
+*.jpg
+*.jpeg
+
+# OS cruft
+.DS_Store
+Thumbs.db
